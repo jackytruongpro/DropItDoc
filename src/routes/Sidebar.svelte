@@ -1,6 +1,5 @@
 <script>
     import { page } from '$app/stores';
-    import github from '$lib/images/github.svg';
     import logoClear from '$lib/images/logo-clear.png'
 </script>
 
