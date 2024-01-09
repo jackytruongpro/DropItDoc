@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --primary: #3F47A2;
+    --primaryClear1: #646AAF;
+    --primaryClear2: #C5C8E3;
+}
+
+@font-face {
+    font-family: "Josefin";
+    src: url("$lib/font/JosefinSans-Bold.ttf");
+}
+
+@font-face {
+    font-family: "Lato";
+    src: url("$lib/font/Lato-Regular.ttf");
+}
+
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: var(--primaryClear2) transparent;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 15px;
+}
+
+*::-webkit-scrollbar-track {
+    background: transparent;
+    border-radius: 5px;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: transparent;
+    border-radius: 14px;
+    border: 3px solid var(--primaryClear2);
+}
