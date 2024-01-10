@@ -1,4 +1,5 @@
 <script>
+    import { base } from '$app/paths';
     import { page } from '$app/stores';
     import logoClear from '$lib/images/logo-clear.png'
 </script>
@@ -13,7 +14,7 @@
             <div class="space-y-2 ">
                 <label class="px-3 text-base font-josefin text-indigo-800 uppercase dark:text-indigo-300">introduction</label>
 
-                <a aria-current={$page.url.pathname === '/' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/">
+                <a aria-current={$page.url.pathname === '/' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path d="M19 21l-7-5-7 5V5a2 2 0 0 1 2-2h10a2 2 0 0 1 2 2z" />
                     </svg>
@@ -21,7 +22,7 @@
                     <span class="mx-2 text-base font-lato">Overview</span>
                 </a>
 
-                <a aria-current={$page.url.pathname === '/whats-new' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/whats-new">
+                <a aria-current={$page.url.pathname === '/whats-new' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/whats-new">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <circle cx="12" cy="12" r="10"></circle>
                         <path d="M9.09 9a3 3 0 0 1 5.83 1c0 2-3 3-3 3"></path>
@@ -35,7 +36,7 @@
             <div class="space-y-2 ">
                 <label class="px-3 text-base font-josefin text-indigo-800 uppercase dark:text-indigo-300">Getting started</label>
 
-                <a aria-current={$page.url.pathname === '/installation' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/installation">
+                <a aria-current={$page.url.pathname === '/installation' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/installation">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <path d="M3 15v4c0 1.1.9 2 2 2h14a2 2 0 0 0 2-2v-4M17 9l-5 5-5-5M12 12.8V2.5"/>
                     </svg>
@@ -43,7 +44,7 @@
                     <span class="mx-2 text-base font-lato">Installation</span>
                 </a>
 
-                <a aria-current={$page.url.pathname === '/setup' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/setup">
+                <a aria-current={$page.url.pathname === '/setup' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/setup">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
                         <line x1="4" y1="21" x2="4" y2="14"></line><line x1="4" y1="10" x2="4" y2="3"></line><line x1="12" y1="21" x2="12" y2="12"></line><line x1="12" y1="8" x2="12" y2="3"></line><line x1="20" y1="21" x2="20" y2="16"></line><line x1="20" y1="12" x2="20" y2="3"></line><line x1="1" y1="14" x2="7" y2="14"></line><line x1="9" y1="8" x2="15" y2="8"></line><line x1="17" y1="16" x2="23" y2="16"></line>
                     </svg>
@@ -76,14 +77,14 @@
             <div class="space-y-2 ">
                 <label class="px-3 text-base font-josefin text-indigo-800 uppercase dark:text-indigo-300">Styles</label>
 
-                <a aria-current={$page.url.pathname === '/styling' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/styling">
+                <a aria-current={$page.url.pathname === '/styling' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/styling">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><polygon points="16 3 21 8 8 21 3 21 3 16 16 3"></polygon>
                     </svg>
 
                     <span class="mx-2 text-base font-lato">Styling</span>
                 </a>
 
-                <a aria-current={$page.url.pathname === '/customizing' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/customizing">
+                <a aria-current={$page.url.pathname === '/customizing' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/customizing">
                     <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-5 h-5">
                         <path stroke-linecap="round" stroke-linejoin="round" d="M4.098 19.902a3.75 3.75 0 005.304 0l6.401-6.402M6.75 21A3.75 3.75 0 013 17.25V4.125C3 3.504 3.504 3 4.125 3h5.25c.621 0 1.125.504 1.125 1.125v4.072M6.75 21a3.75 3.75 0 003.75-3.75V8.197M6.75 21h13.125c.621 0 1.125-.504 1.125-1.125v-5.25c0-.621-.504-1.125-1.125-1.125h-4.072M10.5 8.197l2.88-2.88c.438-.439 1.15-.439 1.59 0l3.712 3.713c.44.44.44 1.152 0 1.59l-2.879 2.88M6.75 17.25h.008v.008H6.75v-.008z" />
                     </svg>
@@ -95,7 +96,7 @@
             <div class="space-y-2 ">
                 <label class="px-3 text-base font-josefin text-indigo-800 uppercase dark:text-indigo-300">Resources</label>
 
-                <a aria-current={$page.url.pathname === '/video-tutorial' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/video-tutorial">
+                <a aria-current={$page.url.pathname === '/video-tutorial' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-100 dark:hover:bg-blue-950 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/video-tutorial">
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"><path d="M15.6 11.6L22 7v10l-6.4-4.5v-1zM4 5h9a2 2 0 0 1 2 2v10a2 2 0 0 1-2 2H4a2 2 0 0 1-2-2V7c0-1.1.9-2 2-2z"/>
                     </svg>
 
@@ -127,17 +128,17 @@
                         <span class="mx-2 text-base font-lato">v.0.0.3</span>
                     </a>
 
-                    <a aria-current={$page.url.pathname === '/versions/v.0.0.2' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-200 dark:hover:bg-blue-900 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/versions/v.0.0.2">
+                    <a aria-current={$page.url.pathname === '/versions/v.0.0.2' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-200 dark:hover:bg-blue-900 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/versions/v.0.0.2">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/></svg>
                         <span class="mx-2 text-base font-lato">v.0.0.2</span>
                     </a>
 
-                    <a aria-current={$page.url.pathname === '/versions/v.0.0.1' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-200 dark:hover:bg-blue-900 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/versions/v.0.0.1">
+                    <a aria-current={$page.url.pathname === '/versions/v.0.0.1' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-200 dark:hover:bg-blue-900 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/versions/v.0.0.1">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/></svg>
                         <span class="mx-2 text-base font-lato">v.0.0.1</span>
                     </a>
 
-                    <a aria-current={$page.url.pathname === '/versions/v.0.0.0' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-200 dark:hover:bg-blue-900 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="/versions/v.0.0.0">
+                    <a aria-current={$page.url.pathname === '/versions/v.0.0.0' ? 'page' : undefined} class="flex items-center px-3 py-1 text-gray-600 transition-colors duration-300 transform rounded-lg dark:text-gray-200 hover:bg-indigo-200 dark:hover:bg-blue-900 dark:hover:text-gray-200 hover:text-gray-700 hover:no-underline" href="{base}/versions/v.0.0.0">
                         <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l9 4.9V17L12 22l-9-4.9V7z"/></svg>
                         <span class="mx-2 text-base font-lato">v.0.0.0</span>
                     </a>
