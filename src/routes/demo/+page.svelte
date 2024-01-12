@@ -24,7 +24,7 @@
   class="relative left-6 max-w-screen-md w-full overflow-hidden shadow-lg rounded-xl"
 >
   <iframe
-    src="https://stackblitz.com/edit/svelte-kit?embed=1&file=README.md"
+    src="https://stackblitz.com/edit/vitejs-vite-gqvk3m?embed=1&file=src%2FApp.svelte"
     width="100%"
     height="600px"
     frameborder="0"
