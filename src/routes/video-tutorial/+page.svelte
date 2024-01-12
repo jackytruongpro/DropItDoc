@@ -1,32 +1,68 @@
+<script>
+  import { page } from "$app/stores";
+  import { base } from "$app/paths";
+</script>
+
 <svelte:head>
-	<title>Video tutorial</title>
-	<meta name="Video tutorial" content="A quick video get started with DropIt" />
+  <title>Video tutorial</title>
+  <meta name="Video tutorial" content="A quick video get started with DropIt" />
 </svelte:head>
 
-<h1 class="font-josefin text-indigo-800 dark:text-indigo-300 text-5xl mb-8">Video tutorial</h1>
-<p class="text-base font-lato leading-8 text-gray-900 dark:text-indigo-50">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis finibus risus, eget posuere massa mollis ac. Pellentesque tristique felis sit amet venenatis lobortis. Ut auctor enim et imperdiet gravida. Sed laoreet tincidunt quam a maximus. Cras placerat nisi non est tincidunt, euismod molestie quam elementum. Duis lectus nulla, blandit ac dapibus ut, ullamcorper vel urna. Praesent pharetra tincidunt rhoncus. Nam dictum nunc est, sit amet facilisis tellus commodo non.
-</p>
-<p class="text-base font-lato leading-8 text-gray-900 dark:text-indigo-50 mt-6">
-	Integer pellentesque <span class="bg-indigo-100 dark:bg-indigo-300 py-1 px-1 mx-1 rounded-md text-indigo-600 dark:text-indigo-700">vulputate</span> massa vel vehicula. Quisque odio velit, pharetra sed ultricies vel, euismod eu turpis. Aenean et accumsan nisi. Suspendisse in iaculis mauris. Duis venenatis rutrum lectus vitae lobortis. Sed placerat eu diam in venenatis. Morbi nulla velit, imperdiet quis felis nec, volutpat pretium lectus. Sed neque libero, efficitur eget est vel, viverra tempus nisi. Cras pharetra velit leo, in consequat sapien luctus rutrum. Phasellus tristique magna et eros molestie tincidunt. Aliquam placerat lorem sem, sed euismod augue dapibus ac.
+<h1 class="font-josefin text-indigo-800 dark:text-indigo-300 text-5xl mb-8">
+  Video tutorial
+</h1>
+<p class="text-base font-lato leading-8 text-gray-900 dark:text-indigo-50 mb-8">
+  This video tutorial serves as a comprehensive guide to introduce the "DropIt"
+  library, providing step-by-step instructions on its installation,
+  configuration, and usage within a Svelte application. Whether you're a
+  beginner looking to explore the basics or an experienced developer seeking a
+  deeper understanding of the library's capabilities, this tutorial covers key
+  aspects such as library setup, integration into Svelte components, and
+  practical examples of drag-and-drop functionality. Follow along to gain
+  insights into effectively incorporating "DropIt" into your projects, enabling
+  you to enhance user interactions through intuitive and seamless drag-and-drop
+  features.
 </p>
 
-<div class="container w-full p-4 bg-gray-800 rounded-xl overflow-x-auto my-8 text-white">
-	<code>
-		npm install dropit
-	</code>
+<div
+  class="relative max-w-screen-md w-full left-8 overflow-hidden shadow-lg rounded-3xl mb-8"
+>
+  <div class="relative" style="padding-bottom: 56.25%;">
+    <iframe
+      class="absolute top-0 left-0 w-full h-full rounded-3xl"
+      src="https://www.youtube.com/embed/H0wHx_ID_vo?si=yxB0wq2vntrzaaND"
+      frameborder="0"
+      allowfullscreen
+    ></iframe>
+  </div>
 </div>
 
-<p class="text-base font-lato leading-8 text-gray-900 dark:text-indigo-50">
-	Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus facilisis finibus risus, eget posuere massa mollis ac. Pellentesque tristique felis sit amet venenatis lobortis. Ut auctor enim et imperdiet gravida. Sed laoreet tincidunt quam a maximus. Cras placerat nisi non est tincidunt, euismod molestie quam elementum. Duis lectus nulla, blandit ac dapibus ut, ullamcorper vel urna. Praesent pharetra tincidunt rhoncus. Nam dictum nunc est, sit amet facilisis tellus commodo non.
-</p>
-
-<p class="text-base font-lato leading-8 text-gray-900 dark:text-indigo-50 mt-6">
-	Integer pellentesque vulputate massa vel vehicula. Quisque odio velit, pharetra sed ultricies vel, euismod eu turpis. Aenean et accumsan nisi. Suspendisse in iaculis mauris. Duis venenatis rutrum lectus vitae lobortis. Sed placerat eu diam in venenatis. Morbi nulla velit, imperdiet quis felis nec, volutpat pretium lectus. Sed neque libero, efficitur eget est vel, viverra tempus nisi. Cras pharetra velit leo, in consequat sapien luctus rutrum. Phasellus tristique magna et eros molestie tincidunt. Aliquam placerat lorem sem, sed euismod augue dapibus ac.
-</p>
-
-<p class="text-base font-lato leading-8 text-gray-900 dark:text-indigo-50 mt-6">
-	Integer pellentesque vulputate massa vel vehicula. Quisque odio velit, pharetra sed ultricies vel, euismod eu turpis. Aenean et accumsan nisi. Suspendisse in iaculis mauris. Duis venenatis rutrum lectus vitae lobortis. Sed placerat eu diam in venenatis. Morbi nulla velit, imperdiet quis felis nec, volutpat pretium lectus. Sed neque libero, efficitur eget est vel, viverra tempus nisi. Cras pharetra velit leo, in consequat sapien luctus rutrum. Phasellus tristique magna et eros molestie tincidunt. Aliquam placerat lorem sem, sed euismod augue dapibus ac.
-</p>
-
-
+<div class="w-full my-12 flex flex-row justify-start rounded-xl">
+  <div class="relative">
+    <div
+      class="absolute inset-0 bg-transparent border-dashed border-indigo-900 dark:border-white rounded-md"
+      style="border-width: 3px"
+    ></div>
+    <a
+      aria-current={$page.url.pathname === "/setup" ? "page" : undefined}
+      href="{base}/setup"
+      class="relative flex justify-between items-center z-10 pl-4 pr-5 py-2 font-lato text-indigo-900 rounded-lg bg-transparent border-dashed border-indigo-900 dark:text-white dark:border-white transform transition-transform hover:translate-x-[10px] hover:translate-y-[-10px] hover:text-white hover:border-transparent hover:bg-indigo-900 hover:no-underline"
+      style="border-width: 3px"
+    >
+      <span class="mr-3">
+        <svg
+          fill="currentColor"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 24 24"
+          width="15"
+          height="15"
+        >
+          <path
+            d="M16.67 0l2.83 2.829-9.339 9.175 9.339 9.167-2.83 2.829-12.17-11.996z"
+          />
+        </svg>
+      </span>
+      Setup
+    </a>
+  </div>
+</div>
